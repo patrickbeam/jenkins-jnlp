@@ -11,4 +11,6 @@ RUN chmod +x /usr/local/bin/start.sh
 
 USER jenkins
 
+RUN mkdir /home/jenkins/.ssh
+
 CMD ["sh", "-c", "/usr/local/bin/start.sh"]
