@@ -9,7 +9,6 @@ RUN apt-get install sudo -y
 COPY start.sh /usr/local/bin/start.sh
 RUN chmod +x /usr/local/bin/start.sh
 
-USER jenkins
 
 RUN mkdir /home/jenkins/.ssh
 
