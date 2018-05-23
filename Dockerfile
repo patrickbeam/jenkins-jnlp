@@ -5,6 +5,6 @@ USER root
 COPY start.sh /usr/local/bin/start.sh
 RUN chmod +x /usr/local/bin/start.sh
 
-USER JENKINS
+USER jenkins
 
 CMD ["sh", "-c", "/usr/local/bin/start.sh"]
