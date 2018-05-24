@@ -6,7 +6,7 @@ fi
 
 java -jar /slave.jar \
     -disableClientsUniqueId \
-    -secret $JENKINS_SECRET
+    -secret $JENKINS_SECRET \
     -name $JENKINS_SLAVE_NAME \
     -executors $JENKINS_SLAVE_WORKERS \
     -master $JENKINS_URL \
