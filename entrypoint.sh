@@ -5,9 +5,7 @@ if [ "$AVD" ]; then
 fi
 
 java -jar /slave.jar \
-    -secret $JENKINS_SECRET \
-    -name $JENKINS_SLAVE_NAME \
-    -master $JENKINS_URL \
+    url $JENKINS_URL $JENKINS_SECRET
 
 if [ "$AVD_PID" ]; then
     kill $SOCAT_PID
