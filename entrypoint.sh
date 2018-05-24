@@ -5,7 +5,6 @@ if [ "$AVD" ]; then
 fi
 
 java -jar /slave.jar \
-    -disableClientsUniqueId \
     -secret $JENKINS_SECRET \
     -name $JENKINS_SLAVE_NAME \
     -executors $JENKINS_SLAVE_WORKERS \
