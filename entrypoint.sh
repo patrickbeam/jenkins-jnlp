@@ -7,7 +7,6 @@ fi
 java -jar /slave.jar \
     -secret $JENKINS_SECRET \
     -name $JENKINS_SLAVE_NAME \
-    -executors $JENKINS_SLAVE_WORKERS \
     -master $JENKINS_URL \
 
 if [ "$AVD_PID" ]; then
