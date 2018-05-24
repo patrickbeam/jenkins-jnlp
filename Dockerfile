@@ -83,6 +83,6 @@ RUN mkdir -p /opt/apk
 ADD slave.jar /
 ADD entrypoint.sh /
 
-chmod +x /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 
 ENTRYPOINT /entrypoint.sh
